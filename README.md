@@ -16,3 +16,18 @@ This project is a demonstration of a CI/CD pipeline using GitHub Actions.
    ```bash
    pytest
    ```
+
+## Docker
+Build the image:
+```bash
+docker build -t ci-app .
+```
+Run the container:
+```bash
+docker run ci-app
+```
+
+## Jenkins
+This repository includes a `Jenkinsfile` for CI/CD automation. To use it:
+1.  Connect your Jenkins instance to this repository.
+2.  The pipeline will automatically run tests and build a Docker image.
